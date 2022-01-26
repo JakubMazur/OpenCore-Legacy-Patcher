@@ -119,7 +119,7 @@ class generate_defaults:
         except KeyError:
             pass
     
-        if model is "MacPro3,1":
+        if model == "MacPro3,1":
             settings.sip_status = False
             settings.secure_status = False
             settings.allow_fv_root = True
