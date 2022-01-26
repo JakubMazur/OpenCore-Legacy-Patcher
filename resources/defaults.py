@@ -118,6 +118,12 @@ class generate_defaults:
                 settings.fu_arguments = None
         except KeyError:
             pass
+    
+        if model is "MacPro3,1":
+            settings.sip_status = False
+            settings.secure_status = False
+            settings.allow_fv_root = True
+            settings.disable_cs_lv = True
 
         # Check if running in RecoveryOS
         settings.recovery_status = utilities.check_recovery()
